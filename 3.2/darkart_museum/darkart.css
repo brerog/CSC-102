@@ -1,0 +1,165 @@
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Cardo', serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333;
+}
+
+h1 {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 3rem;
+    color: #d4af37;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-style: italic;
+    color: #aaa;
+    font-size: 1.1rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.art-piece {
+    background-color: #1c1c1c;
+    border: 1px solid #333;
+    padding: 1rem;
+    transition: transform 0.2s ease;
+}
+
+.art-piece img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border: 2px solid #2c2c2c;
+}
+
+.art-piece:hover {
+    transform: scale(1.02);
+}
+
+.description {
+    margin-top: 0.75rem;
+}
+
+.style-note {
+    font-size: 0.9rem;
+    color: #777;
+    font-style: italic;
+    margin-top: 0.25rem;
+}
+
+.tool {
+    text-align: right;
+    font-style: italic;
+    color: #999;
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding: 2rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.95);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 4px solid #444;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('grain.png');
+    opacity: 0.06;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.curator-note {
+    background-color: #181818;
+    color: #dcdcdc;
+    padding: 2rem;
+    margin: 2rem;
+    border-left: 4px solid #d4af37;
+    font-family: 'Cardo', serif;
+}
+
+.curator-note h2 {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #d4af37;
+}
+
+.signature {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 1.25rem;
+    color: #999;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-image: url('grain.png');
+    opacity: 0.05;
+    z-index: 100;
+}
+
+.curator-note {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    font-family: 'Cardo', serif;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    color: #d4d4d4;
+}
+
+.curator-note h2 {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 2rem;
+    color: #d4af37;
+}
+
+.signature {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #888;
+    font-size: 1.2rem;
+}
