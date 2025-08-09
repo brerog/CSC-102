@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+        <header>
+        <!--Only use 1 H1 tag. (use as many H2, H3, etc... as you want)-->
+        <h1>Palindrome Checker</h1>
+    <!--Navigation menu-->
+        <nav>
+            <!--'A' tag stands for anchor, creating hyperlinks-->
+            <a href="index.html">Index</a>
+            <br>
+            <a href="boards.html">Boards</a>
+            <br>
+            <a href="game.html">Game</a>
+            <br>
+            <a href="strings.html">Input Validation</a>
+            <br>
+            <a href="palindrome.html">Palindrome</a>
+        </nav>
+        </header>
+
+        <main>
+            <!-- here we are setting up the form to call a function that will check if our word is a palindrome, the same forwards and backwards-->
+            <form name="frmPdrome" id="frmPdrome" onsubmit="checkPdrome(event);">
+                <label for="txtWord">Enter a word or phrase: </label><br>
+                <input type="text" id="txtWord" name="txtWord"><br>
+                <input type="submit" value="Check Word">
+            </form>
+            <div id="divPdromeResults"></div>
+        </main>
+
+        <!--MOVE TO JS FILE AFTER-->
+<script src="palindrome.js"></script>
+</body>
+</html>
