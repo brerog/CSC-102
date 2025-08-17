@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinosaur Quiz!</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <!--Only use 1 H1 tag. (use as many H2, H3, etc... as you want)-->
+        <h1>Welcome to Brenden's Dino Quiz!</h1>
+        </header>
+    <!--Navigation menu-->
+        <nav>
+            <!--'A' tag stands for anchor, creating hyperlinks-->
+            <a href="index.html">Index</a>
+            <br>
+            <a href="boards.html">Boards</a>
+            <br>
+            <a href="game.html">Game</a>
+            <br>
+            <a href="strings.html">Strings</a>
+            <br>
+            <a href="palindrome.html">Palindrome</a>
+            <br>
+            <a href="sound.html">Sound</a>
+            <br>
+            <a href="dino_quiz.html">Dino Quiz</a>
+        </nav>
+        <!-- creating a div class for our quiz-->
+    <div class="quiz-container">
+        <!-- assigning an id to our quiz/form, adding an onsubmit for JS function that will check if the answers are correct-->
+        <form id="quizForm" onsubmit="return checkAnswers()">
+            <!-- assign id for quiz questions (empty div for JS later) -->
+            <div id="questions-container"></div>
+            <!-- create the submit button and assign ID for later JS-->
+            <button type="submit" id="submit-btn">Check my answers!</button>
+        </form>
+        <!-- assign id for quiz results (empty div for JS later)-->
+        <div id="results"></div>
+    </div>
+    
+    <script src="dino_quiz.js"></script>
+
+    </body>
+    </html>
