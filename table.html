@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Incorporating Sound!</title>
+    <title>Table</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header>
-        <h1>Sound</h1>
-    
-
+        <header>
+        <!--Only use 1 H1 tag. (use as many H2, H3, etc... as you want)-->
+        <h1>Brenden's Table for Dental Materials</h1>
             <!--Navigation menu-->
         <nav>
             <!--'A' tag stands for anchor, creating hyperlinks-->
@@ -31,19 +30,22 @@
             <a href="table.html">Table</a>
         </nav>
         </header>
-        </body>
+        <main>
+            <h2>Dental Materials compared</h2>
 
-    <main>
-        <!--buttons for our sound-->
-        <button onclick="addSound();">Add Sound</button>
-        <br><br>
-        <button onclick="playSound();" id="btnPlay" hidden="true">Play Sound</button>
-        <br><br>
-        <button onclick="pauseSound();" id="btnPause" hidden="true">Pause Sound</button>
-        <br><br>
-    </main>
+            <!-- html tables use a table tag, followed by tr (row), followed by td (data cell)-->
+            <table id="tblData">
+                <tr>
+                    <th>Material </th>
+                    <th>Flexural Strength MPa </th>
+                    <th>Translucency </th>
+                    <th>Flexural Modulus GPa </th>
+                    <th>Work of Fracture J/m^2</th>
+                </tr>
+            </table>
+        </main>
+
+        <script src="table.js"></script>
     
-    <script src="sound.js"></script>
-
 </body>
 </html>
